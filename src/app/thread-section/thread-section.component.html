@@ -1,0 +1,12 @@
+<div class="thread-section">
+
+    <div class="thread-count">
+        <span><h3>User: {{userName$ | async }}</h3></span>
+    </div>
+
+    <thread-list
+            [threads]="threadSummaries$ | async"
+            [currentSelectedThreadId]="uiState?.currentThreadId"
+            (threadSelected)="onThreadSelected($event)" ></thread-list>
+
+</div>
