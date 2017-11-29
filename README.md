@@ -60,7 +60,8 @@ This will start a server on localhost port 8090.
 
 We can start the chat  application with the following command:
 
-    npm start 
+    npm start OR
+    ng serve --proxy-config proxy.conf.json
     
   The application is visible at port 4200 - [http://localhost:4200](http://localhost:4200)
 
