@@ -37,7 +37,7 @@ If you prefer the Yarn package manager, instead of npm install you can also run:
 
     yarn
     
-# To Run the Chat Application Backend Server 
+# To Run the Backend Server 
 
 We can start the chat backend server with the following command:
 
@@ -45,7 +45,7 @@ We can start the chat backend server with the following command:
     
 This will start a server on localhost port 8090. 
 
-# To Run the Chat Application Frontend Server 
+# To Run the Frontend Server 
 
 We can start the chat  application with the following command:
 
