@@ -1,7 +1,9 @@
 
 # Repository contents
-
 This repository taken from the full application of the [Angular Ngrx Reactive Extensions Architecture Course]
+
+# Implementation Detail
+- [DOC](https://github.com/prai-git/ngrx-reactive-App/blob/master/DOC.md)
 
 # Installation pre-requisites
 
