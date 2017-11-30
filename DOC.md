@@ -1,6 +1,5 @@
 ## Implementation Details
-1. It has an interface for AppStore, a collection of all the states.
-application-state.ts. It has two state (UI and store data).
+1. file: application-state.ts. It has two state (UI and store data).
 
 Once user select any name from dropdown then it dispatch the action *SELECT_USER_ACTION*.
 file: user-selection.component.ts
