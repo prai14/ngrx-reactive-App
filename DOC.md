@@ -2,6 +2,7 @@
 1. file: application-state.ts. It has two state (UI and store data).
 
 Once user select any name from dropdown then it dispatch the action *SELECT_USER_ACTION*.
+
 file: user-selection.component.ts
 
     onSelectUser(newUserId:number) {
@@ -9,20 +10,18 @@ file: user-selection.component.ts
     }
 
 2. This action will call the bellow reducer and effects- 
-uiStateReducer.ts - will set the UiState.userId.
 
-    function handleSelectUserAction(state: UiState, action: SelectUserAction) {
+file: uiStateReducer.ts - will set the UiState.userId.
 
-        const newUiState = Object.assign({}, state);
+       function handleSelectUserAction(state: UiState, action: SelectUserAction)
+       {
+             const newUiState = Object.assign({}, state);
+             newUiState.userId = action.payload;
+             newUiState.currentThreadId = undefined;
+             return newUiState;
+       }
 
-        newUiState.userId = action.payload;
-        newUiState.currentThreadId = undefined;
-
-        return newUiState;
-
-    }
-
-load-threads-effect.service.ts - this registered effect will call another action *LOAD_USER_THREADS_ACTION*.
+file: load-threads-effect.service.ts - this registered effect will call another action *LOAD_USER_THREADS_ACTION*.
 
     @Effect() newUserSelected$ : Observable<Action> = this.actions$
       .ofType<SelectUserAction>(SELECT_USER_ACTION)
