@@ -1,6 +1,10 @@
 ## Implementation Details
 1. file: application-state.ts. It has two state (UI and store data).
 
+       export interface ApplicationState {
+          uiState: UiState,
+          storeData: StoreData,
+       }
 Once user select any name from dropdown then it dispatch the action *SELECT_USER_ACTION*.
 
 file: user-selection.component.ts
