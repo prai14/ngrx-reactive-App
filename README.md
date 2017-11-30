@@ -39,7 +39,7 @@ If you prefer the Yarn package manager, instead of npm install you can also run:
     
 # To Run the Backend Server 
 
-We can start the chat backend server with the following command:
+We can start the backend server with the following command:
 
     npm run api-server
     
@@ -47,7 +47,7 @@ This will start a server on localhost port 8090.
 
 # To Run the Frontend Server 
 
-We can start the chat  application with the following command:
+We can start the application with the following command:
 
     npm start OR
     ng serve --proxy-config proxy.conf.json
